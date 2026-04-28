@@ -59,9 +59,7 @@ The skills are now available globally in all your Claude Code sessions.
 
 ---
 
-### Option C — Plugin marketplace (when `/plugin` commands are available)
-
-If your Claude Code version supports the plugin marketplace:
+### Option C — Plugin marketplace
 
 ```
 /plugin marketplace add erikwski/CLM.plugin
