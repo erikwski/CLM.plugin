@@ -11,7 +11,7 @@
     {
       "name": "datacolor-skills",
       "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
-      "source": "."
+      "source": "https://github.com/erikwski/CLM.plugin"
     }
   ]
 }
