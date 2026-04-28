@@ -1,10 +1,12 @@
 ---
+name: pbi-to-prompt
 description: Converts a PBI (Product Backlog Item) title, description, and acceptance criteria into a clear, actionable Claude prompt ready to paste. Use when you have a PBI and want to generate a prompt for Claude to implement or analyze it.
 ---
 
 You are helping turn a PBI into a focused Claude prompt.
 
 The user will provide (in $ARGUMENTS or in the conversation):
+
 - **PBI Title** — the short name of the backlog item
 - **Description** — the "As a ... I want ... so that ..." or free-text body
 - **Acceptance Criteria** — the list of conditions that define "done"
