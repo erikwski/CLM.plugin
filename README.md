@@ -10,7 +10,19 @@ Shared Claude Code skills for the Datacolor team.
 
 ---
 
-## How to install
+## For designers and POs (claude.ai web app)
+
+Skills are a Claude Code feature and don't exist on the claude.ai web app.
+The equivalent is a shared **Project with custom instructions**.
+
+See [docs/claude-project-instructions.md](docs/claude-project-instructions.md) for:
+- The instruction block to paste into the Project settings
+- Step-by-step setup guide
+- An example input/output
+
+---
+
+## How to install (Claude Code / developers)
 
 There are two ways to use these skills.
 
