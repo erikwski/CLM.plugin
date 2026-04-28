@@ -11,7 +11,7 @@
     {
       "name": "pbi-to-prompt",
       "description": "Converts a PBI (Product Backlog Item) title, description, and acceptance criteria into a clear, actionable Claude prompt ready to paste.",
-      "path": "skills/pbi-to-prompt/SKILL.md"
+      "source": "skills/pbi-to-prompt/SKILL.md"
     }
   ]
 }
