@@ -9,9 +9,9 @@
   "license": "MIT",
   "plugins": [
     {
-      "name": "pbi-to-prompt",
-      "description": "Converts a PBI (Product Backlog Item) title, description, and acceptance criteria into a clear, actionable Claude prompt ready to paste.",
-      "source": "skills/pbi-to-prompt/SKILL.md"
+      "name": "datacolor-skills",
+      "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
+      "source": "."
     }
   ]
 }

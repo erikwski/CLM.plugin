@@ -65,7 +65,7 @@ If your Claude Code version supports the plugin marketplace:
 
 ```
 /plugin marketplace add erikwski/CLM.plugin
-/plugin install datacolor-skills@erikwski-CLM.plugin
+/plugin install datacolor-skills
 ```
 
 ---
