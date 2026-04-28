@@ -4,8 +4,8 @@ Shared Claude Code skills for the Datacolor team.
 
 ## Skills
 
-| Skill | Command | Description |
-|-------|---------|-------------|
+| Skill         | Command                           | Description                                                                               |
+| ------------- | --------------------------------- | ----------------------------------------------------------------------------------------- |
 | PBI to Prompt | `/datacolor-skills:pbi-to-prompt` | Turns a PBI title, description, and acceptance criteria into a ready-to-use Claude prompt |
 
 ## How to install
@@ -19,7 +19,7 @@ Shared Claude Code skills for the Datacolor team.
 Run this command inside Claude Code (the chat input, not the terminal):
 
 ```
-/plugin install https://github.com/datacolor-team/CLM.plugin
+/plugin install https://github.com/erikwski/CLM.plugin
 ```
 
 Replace the URL with the actual GitHub/GitLab URL where this repo is hosted.
