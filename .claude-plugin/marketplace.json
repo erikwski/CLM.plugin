@@ -2,11 +2,12 @@
   "name": "datacolor-skills",
   "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
   "version": "1.0.0",
-  "author": {
-    "name": "Datacolor Team"
+  "owner": {
+    "name": "Datacolor Team",
+    "username": "erikwski"
   },
   "license": "MIT",
-  "skills": [
+  "plugins": [
     {
       "name": "pbi-to-prompt",
       "description": "Converts a PBI (Product Backlog Item) title, description, and acceptance criteria into a clear, actionable Claude prompt ready to paste.",
