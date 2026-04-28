@@ -8,57 +8,97 @@ Shared Claude Code skills for the Datacolor team.
 | ------------- | --------------------------------- | ----------------------------------------------------------------------------------------- |
 | PBI to Prompt | `/datacolor-skills:pbi-to-prompt` | Turns a PBI title, description, and acceptance criteria into a ready-to-use Claude prompt |
 
+---
+
 ## How to install
 
-### Prerequisites
+There are two ways to use these skills.
 
-- [Claude Code](https://claude.ai/code) installed and authenticated
+---
 
-### Install from this repo
+### Option A — Project-level (recommended for shared repos)
 
-Run this command inside Claude Code (the chat input, not the terminal):
+Copy the skills into any project that already uses Claude Code. The skills will be available to everyone who works in that project.
 
+```bash
+# From the root of the target project:
+git clone https://github.com/erikwski/CLM.plugin /tmp/clm-plugin
+cp -r /tmp/clm-plugin/skills .claude/skills
 ```
-/plugin install https://github.com/erikwski/CLM.plugin
-```
 
-Replace the URL with the actual GitHub/GitLab URL where this repo is hosted.
-
-### Verify the install
+Then inside Claude Code:
 
 ```
 /datacolor-skills:pbi-to-prompt
 ```
 
-Claude will ask you for the PBI details and generate the prompt.
+> The `.claude/skills/` folder is loaded automatically by Claude Code. Commit it so the whole team shares it.
+
+---
+
+### Option B — User-level (available in every project you open)
+
+```bash
+git clone https://github.com/erikwski/CLM.plugin /tmp/clm-plugin
+cp -r /tmp/clm-plugin/skills "$HOME/.claude/skills"
+```
+
+The skills are now available globally in all your Claude Code sessions.
+
+---
+
+### Option C — Plugin marketplace (when `/plugin` commands are available)
+
+If your Claude Code version supports the plugin marketplace:
+
+```
+/plugin marketplace add erikwski/CLM.plugin
+/plugin install datacolor-skills@erikwski-CLM.plugin
+```
+
+---
+
+### Keeping skills up to date
+
+```bash
+git -C /tmp/clm-plugin pull
+cp -r /tmp/clm-plugin/skills .claude/skills   # or $HOME/.claude/skills for user-level
+```
+
+---
 
 ## How to use the PBI-to-Prompt skill
 
-1. Open Claude Code in any project.
+1. Open Claude Code in any project where the skills are installed.
 2. Type `/datacolor-skills:pbi-to-prompt`.
-3. Paste or type your PBI details when prompted:
+3. Provide your PBI details when Claude asks:
    - **Title** — e.g. "Export report as PDF"
    - **Description** — the full backlog item body
    - **Acceptance Criteria** — the numbered or bulleted list of conditions
-4. Claude returns a polished prompt you can paste into a new conversation to start implementation.
+4. Claude returns a polished, self-contained prompt you can paste into a new conversation to start implementation.
+
+---
 
 ## Adding new skills
 
 1. Clone this repo.
-2. Create a new folder under `skills/` — the folder name becomes the slash-command suffix.
-3. Add a `SKILL.md` with a `description` frontmatter field and instructions for Claude.
-4. Open a PR. Once merged, colleagues can `/plugin install` or run `/reload-plugins` to pick up the new skill.
+2. Create `skills/<skill-name>/SKILL.md` — the folder name becomes the command suffix.
+3. Add a `description` frontmatter field and write the instructions for Claude.
+4. Open a PR against `main`.
 
 ### Skill file template
 
 ```markdown
 ---
-description: One sentence explaining what this skill does and when to use it.
+name: my-skill
+description: One sentence — what this skill does and when to use it.
 ---
 
 Instructions for Claude go here.
 Use $ARGUMENTS to capture anything the user types after the command name.
 ```
+
+---
 
 ## Contributing
 
