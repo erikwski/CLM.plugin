@@ -1,6 +1,8 @@
 {
   "name": "datacolor-skills",
-  "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
+  "metadata": {
+    "description": "Shared skills for the Datacolor team — PBI prompt generation and more."
+  },
   "owner": {
     "name": "Datacolor Team",
     "username": "erikwski"
