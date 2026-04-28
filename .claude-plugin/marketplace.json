@@ -1,17 +1,18 @@
 {
   "name": "datacolor-skills",
   "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
-  "version": "1.0.0",
   "owner": {
     "name": "Datacolor Team",
     "username": "erikwski"
   },
-  "license": "MIT",
   "plugins": [
     {
       "name": "datacolor-skills",
       "description": "Shared skills for the Datacolor team — PBI prompt generation and more.",
-      "source": "erikwski/CLM.plugin"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/erikwski/CLM.plugin"
+      }
     }
   ]
 }
